@@ -1,10 +1,13 @@
 {
-  "name": "@capacitor-community/intercom",
-  "version": "4.0.1",
+  "name": "@safesitehq/intercom",
+  "version": "4.0.1-fix",
   "description": "Enable Intercom features for Capacitor apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
+  "publishConfig": {
+    "@safesitehq:registry": "https://gitlab.com/api/v4/projects/41095174/packages/npm/"
+  },
   "scripts": {
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
@@ -57,7 +60,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorCommunityIntercom.podspec"
+    "SafesitehqIntercom.podspec"
   ],
   "keywords": [
     "capacitor",
